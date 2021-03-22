@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<meta charset="windows-1251">
+<TITLE>КП Светлояр</TITLE>
+<meta http-equiv="content-type" content="text/html; charset="windows-1251" />
+<style type="text/css" media="screen">html{margin:10px 20px;}a{color:#207DB0;}hr{background:#207DB0; height:1px;}</style>
+
+
+<link rel="stylesheet" href="frame_1.files/css/styles.css" type="text/css" />
+
+<script><!--
+var week = Array("воскресенье","понедельник","вторник","среда","четверг","пятница","суббота");
+var month = Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+function UpdateTime() {
+	var CurrentTime = new Date();
+	var InputTime = document.getElementById('MyTime');
+	var InputDate = document.getElementById('MyDate');
+		h = CurrentTime.getHours();
+		if ( h < 10 ) h = "0" + h;
+		m = CurrentTime.getMinutes();
+		if ( m < 10 ) m = "0" + m;
+		s = CurrentTime.getSeconds();
+		if ( s < 10 ) s = "0" + s;
+		outString = h + ":" + m + ":" + s;
+		InputTime.innerHTML = outString;
+		outString = CurrentTime.getDate() + " ";
+		outString += month[CurrentTime.getMonth()] + " ";
+		outString += CurrentTime.getFullYear() + " г.";
+		//outString += " (" + week[CurrentTime.getDay()] + ")";
+		InputDate.innerHTML = outString;
+		setTimeout("UpdateTime()",1000);
+	}
+--></script>
+
+</HEAD>
+
+<BODY onLoad="setTimeout('UpdateTime()',1000);">
+<!-- Начало Табл. Меню+Наша инф-я -->
+<table width="100%" border="0">
+<tr>
+
+<!-- Логотип Светлояра -->
+<td width="20%"> <img src="frame_1.files/logo.png" width="252" height="78" align="middle" />
+</td>
+
+<!-- Шапка #27316E -->
+<td width="55%" align="middle">
+<font face="arial black" color=#FF4500 size=6>КП "Светлояр"<br><font size=5>Вся информация в одном месте</font>
+</td>
+
+<!-- Время и дата -->
+<td width="25%"><font color=#27316E>
+Сегодня: <strong><span id="MyDate">??</span></strong><p>Время: <strong><span id="MyTime">??</span></strong></p>
+</td>
+</tr>
+</table>
+
+
+
+<!-- код меню -->
+<div class="menu_ihtut_net">
+	<div id="menu_ihtut_net">
+            <a href="https://vk.com/im?peers=c23_c17&sel=c16" target="workspace 2.2">Важное</a>
+            <a href="https://vk.com/im?peers=c16_c23&sel=c17" target="workspace 2.2">Флуд</a>
+            <a href="Remont.html" target="workspace 2.2">Ремонт</a>
+	    <a href="GKH.html" target="workspace 2.2">ЖКХ</a>
+	    <a href="https://vk.com/topic-163620672_40942075" target="workspace 2.2">Услуги</a>
+	    <a href="https://vk.me/join/bMrTvCF976sMw4cXcchTFjrdLNolR9K7nP0=" target="workspace 2.2">Объявления</a>
+            <a href="VideoCam.html" target="workspace 2.2">Видеокамеры</a>
+	</div>
+</div>
+<!--end Меню --> 
+
+
+</BODY>
+</HTML>

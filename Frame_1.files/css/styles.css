@@ -1,0 +1,36 @@
+div.menu_ihtut_net {
+	background: url("../images/menuihtutnet-fon-svetloyar.png") repeat-x 0 0; /* фон меню , пропишите правильный путь! */
+	height:40px;
+	overflow: hidden;
+}
+
+div.menu_ihtut_net  div#menu_ihtut_net {
+	float: left;
+	padding:0;
+	height:40px;
+	margin: 0 10px;
+}
+
+div.menu_ihtut_net  a{
+	background: url("../images/menuihtutnet-link-adzl.png") repeat-x 0 0; /* фон пунктов меню , пропишите правильный путь! */
+	color: #626262; /* цвет шрифта */
+	display: block;
+	float: left;
+	font: 17px/30px Cooper Black; /* размер шрифта / высота шрифта  / семейство шрифтов */
+	height:30px;
+	text-decoration: none; /* подчеркивание(сейчас его нет) */
+	text-align: center;
+	width: 147px;
+	overflow: hidden;
+	margin: 5px 0 0 2px; /* отступы пунктов меню */
+	text-shadow: #000 0 0 1px; /* тень у букв */
+}
+
+div.menu_ihtut_net a:hover, div.menu_ihtut_net a.active{
+	background: url("../images/menuihtutnet-link-adzl.png") repeat-x 0 100%; /* фон пунктов меню (при наведении) , пропишите правильный путь! */
+	color: #27316E; /* цвет шрифта при наведении */
+	text-shadow: #249dfb 0 0 25px; /* тень у букв при наведениии */
+}
+
+
+
